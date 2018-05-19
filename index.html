@@ -8,80 +8,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto" rel="stylesheet">
+    <link href="static/style/main.css" rel="stylesheet">
     <style>
-        html {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        #home {
-            height: 100vh;
-            background: #202226;
-        }
-
-        #home h1 {
-            text-align: center;
-            font-family: 'Cabin', sans-serif;
-            font-size: 2em;
-            font-weight: normal;
-            color: #E8EEF2;
-            line-height: .8em;
-        }
-
-        #home .content {
-            color: #C7D3DD;
-            width: 70%;
-            text-align: center;
-            font-size: 1.4em;
-        }
-
-        #home .content p{
-            line-height: 1.2em;
-            margin-bottom: 1.2em;
-        }
-
-        #home .links ul {
-            margin: 0px
-        }
-
-        #home .links li {
-            list-style: none;
-            display: inline;
-            margin-right: 10px;
-        }
-
-        .middle-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .links a {
-            display: inline-flex;
-            width: 24px;
-            height: 24px;
-            color: fff;
-            text-decoration: none;
-        }
-
-        .links i::after {
-            content: "asdas";
-        }
-
-        .behance {
-            background: url(static/icon/behance.svg);
-        }
-
-        .linkedin {
-            background: url(static/icon/linkedin.svg);
-        }
-
-        .github {
-            background: url(static/icon/github.svg);
-        }
+       
     </style>
 </head>
 
 <body>
+    <div id="bg"></div>
     <div class="wrapper">
         <section id="home" class="middle-box">
             <div class="content">
@@ -100,6 +34,9 @@
                         <li>
                             <a href="https://www.behance.net/ozgurcinar" target="_blank" class="behance">&nbsp;</a>
                         </li>
+                        <li>
+                                <a href="https://codepen.io/ozgio/" target="_blank" class="codepen">&nbsp;</a>
+                            </li>
                     </ul>
 
                 </div>
@@ -108,4 +45,7 @@
     </div>
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+<script src="static/scripts/background.js"></script>
+<script>startBgAnimation(p5)</script>
 </html>
