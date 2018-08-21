@@ -8,44 +8,278 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto" rel="stylesheet">
-    <link href="static/style/main.css" rel="stylesheet">
     <style>
-       
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #222;
+        }
+
+        a {
+            color: #000;
+            padding: 2px;
+        }
+
+        a:hover {
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 2px
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-family: 'Cabin', sans-serif;
+            font-size: 2rem;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 1.4em
+        }
+
+        h3 {
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            padding: 48px 24px;
+            max-width: 640px;
+        }
+
+        .two-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+
+        section h3 i,
+        section h3 i a {
+            font-size: 1em;
+            color: #999;
+            font-weight: 100;
+            text-decoration: none;
+        }
+
+        section .content {
+            margin: 0;
+            padding: 0
+        }
+
+        section .content ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        section .content li {
+            list-style: none;
+            margin-top: 0px;
+            padding-top: 0px;
+            margin-bottom: 16px;
+        }
+
+        /* sections *****************************************/
+
+        #home {
+            margin-bottom: 20px;
+        }
+
+        #home .links {
+            text-align: right;
+        }
+
+        #home .links i {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+            vertical-align: top;
+        }
+
+        #home .links a {
+            text-decoration: none;
+        }
+
+        #home .links a:hover {
+            background: none;
+        }
+
+        #summary p {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+
+        #experiences li span {
+            color: #999;
+        }
+
+        #projects h3 a {
+            font-weight: bold;
+        }
+
+        #projects h3,
+        #projects p {
+            display: inline;
+        }
+
+        #projects p {
+            font-style: italic;
+            color: #999
+        }
+
+        #skills span {
+            display: inline-block;
+            padding: 8px;
+            border: 1px solid #000;
+            margin: 4px;
+        }
+
+        #skills span.exp2 {
+            color: #666;
+            border: 1px solid #777;
+        }
+
+        #skills span.exp1 {
+            color: #aaa;
+            border: 1px solid #aaa;
+
+        }
+
+        .behance i {
+            background: url(static/icon/behance.svg);
+        }
+
+        .linkedin i {
+            background: url(static/icon/linkedin.svg);
+        }
+
+        .github i {
+            background: url(static/icon/github.svg);
+        }
+
+        .codepen i {
+            background: url(static/icon/codepen.svg);
+        }
     </style>
 </head>
 
 <body>
-    <div id="bg"></div>
     <div class="wrapper">
-        <section id="home" class="middle-box">
-            <div class="content">
+        <section id="home">
+            <div class="content two-column">
                 <h1>Ozgur Erdem Cinar</h1>
-                <p>I am a senior software engineer with 15 years of experience as developer, team leader and project manager.
-                    Follow the links for more information
-                </p>
                 <div class="links">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/ozgurcinar/" target="_blank" class="linkedin">&nbsp;</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ozgio" target="_blank" class="github">&nbsp;</a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/ozgurcinar" target="_blank" class="behance">&nbsp;</a>
-                        </li>
-                        <li>
-                                <a href="https://codepen.io/ozgio/" target="_blank" class="codepen">&nbsp;</a>
-                            </li>
-                    </ul>
-
+                    <a href="https://www.linkedin.com/in/ozgurcinar/" target="_blank" class="linkedin">
+                        <i></i>
+                    </a>
+                    <a href="https://github.com/ozgio" target="_blank" class="github">
+                        <i></i>
+                    </a>
+                    <a href="https://www.behance.net/ozgurcinar" target="_blank" class="behance">
+                        <i></i>
+                    </a>
+                    <a href="https://codepen.io/ozgio/" target="_blank" class="codepen">
+                        <i></i>
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <section id="summary">
+            <div class="content">
+                <p>I am a senior software engineer with 15 years of experience, mostly in frontend/backend web technologies
+                    and casual games​. I have a B.S in Computer Engineering​.
+                </p>
+            </div>
+        </section>
+
+        <section id="experiences">
+            <h2>Experience</h2>
+            <ul class="content">
+                <li class="two-column">
+                    <h3>Backend Team Lead
+                        <i>at
+                            <a href="http://gamegos.com">Gamegos</a>
+                        </i>
+                    </h3>
+                    <span>
+                        <strong></strong>2013-2018</span>
+                </li>
+                <li class="two-column">
+                    <h3>Senior Software Engineer
+                        <i>at
+                            <a href="http://gamegos.com">Gamegos</a>
+                        </i>
+                    </h3>
+                    <span>2009-2013</span>
+                </li>
+                <li class="two-column">
+                    <h3>Software Engineer
+                        <i>at
+                            <a href="http://cr34.com">Crea Technology</a>
+                        </i>
+                    </h3>
+                    <span>2004-2008</span>
+                </li>
+                <li class="two-column">
+                    <h3>Freelance Web Developer</h3>
+                    <span>2002-2004</span>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="projects">
+            <h2>Personal Projects</h2>
+            <ul class="content">
+                <li>
+                    <h3>
+                        <a href="https://github.com/ozgio/strutil" target="_blank">strutil</a>
+                    </h3>
+                    <p>String library for Go</p>
+                </li>
+                <li>
+                    <h3>
+                        <a href="https://github.com/ozgio/dmn" target="_blank">dmn</a>
+                    </h3>
+                    <p>Command line tool for checking domain name availabilty, written with Go</p>
+                </li>
+                <li>
+                    <h3>
+                        <a href="https://itunes.apple.com/us/app/balloon-pop-for-toddlers-and-kids/id1232794567" target="_blank">Balloon Pop</a>
+                    </h3>
+                    <p>Very simple game for toddlers, written with Swift</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="content">
+                <span class="exp3">Go</span>
+                <span class="exp3">Javscript</span>
+                <span class="exp2">NodeJS</span>
+                <span class="exp2">PHP</span>
+                <span class="exp2">Java</span>
+                <span class="exp2">Lua</span>
+                <span class="exp1">Python</span>
+                <span class="exp1">C#</span>
             </div>
         </section>
     </div>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
-<script src="static/scripts/background.js"></script>
-<script>startBgAnimation(p5)</script>
 </html>
