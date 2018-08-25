@@ -67,7 +67,7 @@
         }
 
         .wrapper {
-            padding: 48px 24px;
+            padding: 24px 12px;
             max-width: 640px;
         }
 
@@ -144,14 +144,18 @@
             color: #999;
         }
 
-        #projects h3 a {
+        #experiences i{
+            white-space: nowrap;
+        }
+
+        #projects h3 a, #links h3 a {
             font-weight: bold;
             border-bottom: 1px solid #000;
             background: #f3f3f3;
             text-decoration: none;
         }
 
-        #projects h3 a:hover {
+        #projects h3 a:hover, #links h3 a:hover {
             background: #000;
         }
 
@@ -183,10 +187,6 @@
 
         }
 
-        .behance i {
-            background: url(static/icon/behance.svg);
-        }
-
         .linkedin i {
             background: url(static/icon/linkedin.svg);
         }
@@ -194,9 +194,7 @@
         .github i {
             background: url(static/icon/github.svg);
         }
-
-        .codepen i {
-            background: url(static/icon/codepen.svg);
+background: url(static/icon/codepen.svg);
         }
     </style>
 </head>
@@ -211,12 +209,6 @@
                         <i></i>
                     </a>
                     <a href="https://github.com/ozgio" target="_blank" class="github">
-                        <i></i>
-                    </a>
-                    <a href="https://www.behance.net/ozgurcinar" target="_blank" class="behance">
-                        <i></i>
-                    </a>
-                    <a href="https://codepen.io/ozgio/" target="_blank" class="codepen">
                         <i></i>
                     </a>
                 </div>
@@ -331,6 +323,32 @@
                 <span class="exp2">CI</span>
                 
             </div>
+        </section>
+
+        <section id="links">
+            <h2>Profiles</h2>
+            <ul class="content">
+                <li>
+                    <h3>
+                        <a href="https://www.linkedin.com/in/ozgurcinar/" target="_blank">LinkedIn</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="https://github.com/ozgio" target="_blank">Github</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="https://www.behance.net/ozgurcinar" target="_blank">Behance</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="https://codepen.io/ozgio/" target="_blank">Codepen</a>
+                    </h3>
+                </li>
+            </ul>
         </section>
     </div>
 </body>
