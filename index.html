@@ -56,7 +56,8 @@
         }
 
         h2 {
-            font-size: 1.4em
+            font-size: 1.4em;
+            font-family: 'Cabin', sans-serif;
         }
 
         h3 {
@@ -81,7 +82,8 @@
         section h3 i a {
             font-size: 1em;
             color: #999;
-            font-weight: 100;
+            font-weight: normal;
+            ;
             text-decoration: none;
         }
 
@@ -102,6 +104,10 @@
             margin-bottom: 16px;
         }
 
+        section p {
+            line-height: 1.4rem
+        }
+
         /* sections *****************************************/
 
         #home {
@@ -110,13 +116,14 @@
 
         #home .links {
             text-align: right;
+            min-width: 150px;
         }
 
         #home .links i {
             display: inline-block;
             width: 24px;
             height: 24px;
-            margin-left: 8px;
+            margin-left: 4px;
             vertical-align: top;
         }
 
@@ -130,7 +137,7 @@
 
         #summary p {
             font-size: 1.4rem;
-            line-height: 1.8rem;
+            line-height: 2rem;
         }
 
         #experiences li span {
@@ -139,6 +146,13 @@
 
         #projects h3 a {
             font-weight: bold;
+            border-bottom: 1px solid #000;
+            background: #f3f3f3;
+            text-decoration: none;
+        }
+
+        #projects h3 a:hover {
+            background: #000;
         }
 
         #projects h3,
